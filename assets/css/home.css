@@ -1,0 +1,547 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+*:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.header {
+	background-image: url("../img/home-hero.png");
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-text h1 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	text-align: center;
+	color: white;
+	font-size: 72px;
+}
+
+.header-text p {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 1rem;
+}
+
+.header-button {
+	margin-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.header-button button {
+	padding: 20px 30px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	border: none;
+	transition: 0.1s all ease-in-out;
+}
+
+.header-button :first-child {
+	background-color: #dec7a6;
+	color: #121212;
+}
+
+.header-button :last-child {
+	border: 3px solid white;
+	background: none;
+	color: white;
+}
+
+.header-button :last-child:hover {
+	background-color: black;
+	border: 3px solid black;
+}
+
+.header-button button:active {
+	transform: scale(0.9);
+}
+
+.info-box {
+	display: flex;
+	background-color: white;
+	width: 90%;
+	position: absolute;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 20px;
+	bottom: 0;
+	transform: translateY(50%);
+}
+
+.info-box > div {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	flex: 1;
+	height: 200px;
+	align-items: center;
+}
+
+.info-box > div > img {
+	width: 47px;
+	height: 56px;
+}
+
+.info-box > div > h3 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.info-box .divider {
+	width: 5rem;
+	height: 5px;
+	background-color: #dec7a6;
+}
+
+.info-box > div > p {
+	font-family: "Barlow", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.services {
+	height: max-content;
+	background-color: #f8f5ef;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.personal-barber {
+	/* border: 1px solid red; */
+	width: 90%;
+	height: max-content;
+	padding: 15rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* gap: 15rem; */
+	gap: 10rem;
+}
+.personal-barber-text {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	gap: 2rem;
+}
+.personal-barber-text h2 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 3rem;
+	/* width: 419px; */
+}
+
+.personal-barber-text > p {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1rem;
+	word-spacing: 0.2rem;
+}
+
+.personal-barber img {
+	object-fit: cover;
+	object-position: center;
+}
+
+/* .personal-barber-image {
+	background-image: url("../img/personal-barber.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 50vh;
+} */
+
+.satisfaction-experience {
+	display: flex;
+	/* align-self: center; */
+	flex-direction: row;
+	gap: 5rem;
+}
+
+.satisfaction-experience h4,
+.satisfaction-experience h3 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.satisfaction-experience h3 {
+	font-size: 3rem;
+}
+
+.satisfaction-experience h4 {
+	font-size: 1.25rem;
+}
+
+.customer-satisfaction h3:after {
+	content: "%";
+	color: #dec7a6;
+}
+
+.years-of-experience h3:after {
+	content: "+";
+	color: #dec7a6;
+}
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10rem;
+}
+.catalog > h2 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.catalog > p {
+	width: 50%;
+	text-align: center;
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1rem;
+	margin-bottom: 3rem;
+}
+
+.catalog-list {
+	background-color: white;
+	width: 70%;
+	height: max-content;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+	display: grid;
+	grid-template-columns: repeat(2, minmax(250px, 1fr));
+	padding: 4rem 4rem;
+	row-gap: 6rem;
+	column-gap: 4rem;
+	margin-bottom: 2rem;
+}
+
+.catalog-list img {
+	width: 4rem;
+	height: 4rem;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	margin-right: 2rem;
+}
+
+.catalog-list > div {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.catalog-list-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.catalog-list-text h3 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.catalog-list-text p {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1rem;
+	/* width: 50%; */
+}
+
+.catalog > button {
+	padding: 20px 30px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1.125rem;
+	border: none;
+	transition: 0.1s all ease-in-out;
+	background-color: #dec7a6;
+	color: #121212;
+}
+
+.match-cut {
+	width: 100%;
+	height: 569px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/match-cut.png");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	flex-direction: column;
+}
+
+.match-cut h2 {
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	width: 50%;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: none;
+}
+
+.match-cut button {
+	background-color: #dec7a6;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	padding: 10px 30px;
+	border: none;
+	font-size: 18px;
+}
+
+.why-us {
+	background-color: white;
+	padding: 5rem 0;
+	/* width: 90%; */
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+.why-us > h2 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.why-us > p {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.why {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 2rem;
+	/* align-self: stretch; */
+	margin-bottom: 15rem;
+}
+
+.why img {
+	width: 64px;
+	height: 64px;
+}
+
+.why .divider {
+	width: 5rem;
+	height: 5px;
+	background-color: #dec7a6;
+}
+
+.why h3 {
+	display: inline;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.why p {
+	/* width: 280px; */
+	max-width: 280px;
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}
+
+.why > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 400px;
+	gap: 0.5rem;
+	flex: 1;
+}
+
+.us {
+	display: flex;
+	width: 90%;
+	align-self: center;
+	align-items: center;
+}
+.us > div:first-child > img:first-child, .us > div:last-child > img:first-child {
+	width: 42px;
+	height: 42px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.stars {
+	width: 152px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.us h3,
+.us h2 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.us h3 {
+	font-size: 1.25rem;
+}
+
+.us h2 {
+	font-size: 5.75rem;
+	line-height: 1;
+}
+
+.us p {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.us > .review > p {
+	font-size: 1rem;
+}
+
+.us > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.google {
+	flex: 1;
+}
+
+.review {
+	flex: 2;
+	border: 1px solid #dec7a6;
+	padding: 5rem 5rem 5rem;
+	position: relative;
+}
+
+.review img:first-child {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+}
+
+.tripadvisor {
+	flex: 1;
+}
+
+@media (max-width: 1280px) {
+	/* .info-box {
+		bottom: -20vh;
+		transform: translateY(20%);
+		border: 5px solid red;
+	} */
+}
+
+@media (max-width: 961px) {
+	.personal-barber {
+		flex-direction: column-reverse;
+		gap: 2rem;
+	}
+
+	.personal-barber img {
+		width: 30%;
+	}
+}
